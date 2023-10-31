@@ -11,21 +11,21 @@ int main()
 	cin >> size;
 	int *b;
 	b = new int[size];
-	b = { 0 };
 	for (int j = 1; j < size; ++j)
 	{
+		b[j] = 0;
 		for (int i = 1; i <= j; ++i)
 		{
 			if (j % i == 0)
 			{
-				b[j]++;
+				b[j]+=1;
 			}
 		}
 	}
 	int m = 0;
 	for (int i = 0; i < size; i++)
 	{
-		if (b[i] == 8)
+		if (b[i]==8)
 		{
 			m++;
 		}
