@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-	cout << "範囲を入力して下さい。" << endl;
+	cout << "範囲を入力して下さい。" << endl;//最初は200でやってた。提出するつもりなかったからめっちゃざつ
 	int size = 0;
 	cin >> size;
 	int *b;
