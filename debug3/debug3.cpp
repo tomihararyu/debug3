@@ -11,10 +11,10 @@ int main()
 	cin >> size;
 	int *b;
 	b = new int[size];
-	for (int j = 1; j < size; ++j)
+	for (int j = 1; j < size; j+=2)
 	{
 		b[j] = 0;
-		for (int i = 1; i <= j; ++i)
+		for (int i = 1; i <= j; i+=2)
 		{
 			if (j % i == 0)
 			{
